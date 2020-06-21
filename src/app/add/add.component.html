@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+        <div class="card-title"><h3>Body Mass Index (BMI)</h3></div>
+        <br>
+
+        <div class="form-group">
+            <span>Name:</span><input type="text" name="Name" class="form-control" [(ngModel)]="Name">
+        </div>
+
+        <div class="form-group">
+            <span>Weight(kg):</span><input type="number" name="Weight" class="form-control" [(ngModel)]="Weight">
+        </div>
+
+        <div class="form-group">
+            <span>Height(m):</span><input type="number" name="Height" class="form-control" [(ngModel)]="Height">
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary" (click)="saveProduct()">Calculate!</button>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary" (click)="clickViewTable()">View Table</button>
+        </div>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title"><h3>BMI Person Table</h3></div>
+            <br>
+            <table #productsTable class="display" style="width:100%">
+                <thead>
+                <tr>
+                  <th>BMI ID</th>
+                  <th>Name</th>
+                  <th>Weight</th>
+                  <th>Height</th>
+                  <th>BMI</th>
+                  <th>Category</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let product of products">
+                  <td>{{product.Bmi_id}}</td>
+                  <td>{{product.Name}}</td>
+                  <td>{{product.Weight}}</td>
+                  <td>{{product.Height}}</td>
+                  <td>{{product.BMI}}</td>
+                  <td>{{product.Category}}</td>
+                  <td>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+
+              <div class="form-group">
+                  <button class="btn btn-primary" (click)="clickBack()">Back</button>
+              </div>
+        </div>
+    </div>
+</div>
